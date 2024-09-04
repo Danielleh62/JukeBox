@@ -1,0 +1,320 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.burger-menu-checkbox {
+    display: none;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscribe-btn {
+    background-color: #ed0c1fd2;
+    color: #fff;
+    border: 1px solid #FF3D4E;
+}
+
+.login-btn {
+    background-color: #ed0c1fd2;
+    color: #fff;
+    border: 1px solid #FF3D4E;
+}
+
+.hero {
+    background-image: url('hero-photo.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 1;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subscribe-today-btn {
+    background-color: #FF3D4E;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.pricing {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.pricing p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #3B56F3;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 250px;
+    color: #fff;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.card:nth-child(2) p {
+    color: #00FF00;
+}
+
+.card:nth-child(3) p {
+    color: #FF4500;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.sign-up-btn {
+    background-color: #FF3D4E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 20px;
+    background-color: #A464F2;
+    color: #fff;
+    text-align: center;
+}
+
+.features .feature {
+    width: 30%;
+}
+
+.features .feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features .feature p {
+    font-size: 18px;
+}
+
+.features .feature img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.artists {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.artists h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.artist-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.artist-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #0057FF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .footer-logo img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+@media (max-width: 430px) and (max-height: 932px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .header-buttons {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .burger-menu-checkbox:checked + .burger-menu + .header-buttons {
+        display: flex;
+    }
+
+    .header-buttons button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 50px 10px;
+        background-position: top;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .pricing-cards, .artist-gallery, .plan-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .artist-gallery img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .artist-gallery img {
+        width: 100px;
+        height: 100px;
+    }
+}
+about-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    z-index: 0;}
+
+.features {
+    background-image: url('about-photo.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
